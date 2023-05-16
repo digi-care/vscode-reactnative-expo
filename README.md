@@ -1,6 +1,6 @@
-# vscode-react-parcel
+# vscode-react-native-expo
 
-Running React App on [GitHub Pages](https://jp-rad.github.io/vscode-react-parcel/) as a web app.  
+https://zenn.dev/username/articles/2021-12-25-9b543d55e9ff81afff09
 
 **Example**
 ``` App.tsx
