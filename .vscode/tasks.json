@@ -4,7 +4,22 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "expo: publish (statging)",
+            "label": "expo: publish (default)",
+            "type": "shell",
+            "command": "expo",
+            "args": [
+                "publish",
+                "--release-channel",
+                "default",
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+        },
+        {
+            "label": "expo: publish (staging)",
             "type": "shell",
             "command": "expo",
             "args": [
@@ -14,8 +29,7 @@
             ],
             "problemMatcher": [],
             "group": {
-                "kind": "build",
-                "isDefault": true
+                "kind": "build"
             },
         },
         {
