@@ -4,17 +4,39 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "parcel: build",
+            "label": "expo: publish (statging)",
             "type": "shell",
-            "command": "yarn",
+            "command": "expo",
             "args": [
-                "build",
+                "publish",
+                "--release-channel",
+                "staging",
             ],
             "problemMatcher": [],
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
+        },
+        {
+            "label": "expo: publish:history",
+            "type": "shell",
+            "command": "expo",
+            "args": [
+                "publish:history",
+            ],
+            "problemMatcher": [],
+        },
+        {
+            "label": "expo: publish:details",
+            "type": "shell",
+            "command": "expo",
+            "args": [
+                "publish:details",
+                "--publish-id",
+                "${input:publicationId}",
+            ],
+            "problemMatcher": [],
         },
         {
             "label": "yarn: install",
@@ -33,6 +55,14 @@
             "type": "shell",
             "command": "yarn global add npm-check-updates && npm-check-updates -u",
             "problemMatcher": [],
+        },
+    ],
+    "inputs": [
+        {
+            "id": "publicationId",
+            "description": "publicationId",
+            "default": "",
+            "type": "promptString"
         },
     ]
 }

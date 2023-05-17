@@ -2,6 +2,9 @@
 
 https://zenn.dev/username/articles/2021-12-25-9b543d55e9ff81afff09
 
+github actions  
+https://github.com/expo/expo-github-action/tree/v7
+
 **Example**
 ``` App.tsx
 // App.tsx
